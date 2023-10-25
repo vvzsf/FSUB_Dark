@@ -29,16 +29,14 @@ START_MESSAGE = os.environ.get(
     "START_MESSAGE",
     "Halo {mention}!"
     "\n\n"
-    "I can save private files on a specific Channel and other users can access them from a special link.",
-)
+    "I can save private files on a specific Channel and other users can access them from a special link.",)
 FORCE_MESSAGE = os.environ.get(
     "FORCE_MESSAGE",
     "Halo {mention}!"
     "\n\n"
     "You must join the Channel/Group first to see the files I share."
     "\n\n"
-    "Please join the channel/group first.",
-)
+    "Please join the channel/group first.")
 
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
