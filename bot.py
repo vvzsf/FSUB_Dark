@@ -61,8 +61,8 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} "
-                    "menjadi Admin di FORCE_SUB_1\n\n"
+                    f"Make sure @{self.username} "
+                    "become Admin at FORCE_SUB_1\n\n"
                 )
                 sys.exit()
         if FORCE_SUB_2:
@@ -81,8 +81,8 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} "
-                    "menjadi Admin di FORCE_SUB_2\n\n"
+                    f"Make sure @{self.username} "
+                    "become Admin at FORCE_SUB_2\n\n"
                 )
                 sys.exit()
         if FORCE_SUB_3:
@@ -101,8 +101,8 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} "
-                    "menjadi Admin di FORCE_SUB_3\n\n"
+                    f"Make sure @{self.username} "
+                    "become Admin at FORCE_SUB_3\n\n"
                 )
                 sys.exit()
         if FORCE_SUB_4:
@@ -121,8 +121,8 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    f"Pastikan @{self.username} "
-                    "menjadi Admin di FORCE_SUB_4\n\n"
+                    f"Make sure @{self.username} "
+                    "become Admin at FORCE_SUB_4\n\n"
                 )
                 sys.exit()
 
@@ -140,16 +140,16 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(
-                f"Pastikan @{self.username} "
-                "menjadi Admin di CHANNEL_DB\n\n"
+                f"Make sure @{self.username} "
+                    "become Admin at FORCE_SUB_DB\n\n"
             )
             sys.exit()
 
         self.set_parse_mode(enums.ParseMode.HTML)
         self.LOGGER(__name__).info(
-            "Bot Aktif!\n\n"
+            "Active Bot!\n\n"
         )
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot Berhenti!\n\n")
+        self.LOGGER(__name__).info("Bot Stop!\n\n")
