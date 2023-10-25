@@ -43,8 +43,7 @@ FORCE_MESSAGE = os.environ.get(
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
 except ValueError:
-    raise Exception("Your Admin list does not contain a valid Telegram User ID
-.")
+    raise Exception("Your Admin list does not contain a valid Telegram User ID.")
     
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 DISABLE_BUTTON = strtobool(os.environ.get("DISABLE_BUTTON", "False"))
